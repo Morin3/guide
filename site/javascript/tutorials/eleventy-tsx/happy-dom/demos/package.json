@@ -13,7 +13,7 @@
 	"type": "module",
 	"dependencies": {
 		"@11ty/eleventy": "^3.0.0-alpha.6",
-		"jsx-async-runtime": "^0.1.8"
+		"jsx-async-runtime": "^0.6.2"
 	},
 	"devDependencies": {
 		"@testing-library/dom": "^10.0.0",
