@@ -9,7 +9,7 @@ RUN npm run build
 RUN rm -rf /app/_site/.assets-cache/
 
 
-FROM nginx:stable-alpine as final
+FROM nginx:1.29.5-alpine3.23 as final
 
 COPY --from=builder --chown=nginx:nginx /app/_site/ /usr/share/nginx/html/guide
 
