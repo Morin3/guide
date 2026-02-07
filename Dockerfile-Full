@@ -9,7 +9,7 @@ RUN npm run build
 RUN rm -rf /app/_site/.assets-cache/
 
 
-FROM nginx:stable-alpine as final
+FROM nginx:1.29.5-alpine3.23 as final
 
 # Copy the Nginx configuration file to the container
 COPY deployment/redirect-test/files/nginx.conf /etc/nginx/nginx.conf
